@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM_PAGE</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        .head{
+            background-color: rgb(37, 192, 140);
+            color:white;
+            height:3pc;
+           padding-top:1.5pc;
+           
+
+        }
+        hr{
+            background-color:rgb(162, 240, 229);
+            height: 2px;
+        }
+        h1{
+            position:relative;
+            margin-left:41%;
+        }
+
+        .formdiv2{
+            background-color: rgb(144, 240, 208);
+            height:100%;
+            margin-top:0px;
+        }
+
+        .box{
+            
+            margin-top:2pc;
+            width:15pc;
+            height:2pc;
+            border-radius: 8px;
+            padding-left:1pc;
+
+        }
+        p{
+            display:inline-block;
+            margin-left:4pc;
+            font-size:18px;
+            font-weight: bold;
+        }
+
+        button
+        {
+            width:8pc;
+            height:3pc;
+            border-radius:2pc;
+            background-color: rgb(220, 188, 8);
+            border-color:rgb(220, 188, 8);
+            margin-left:30px;
+            margin-bottom:20px;
+            margin-top:1.5pc;
+            color:white;
+
+        }
+
+        .formdiv{
+            background-color: rgb(10, 221, 182);
+            width:35%;
+            margin-left:33pc;
+            border-radius:3pc;
+          
+        }
+
+        h2{
+            position:relative;
+            color:white;
+            margin-left:6pc;
+            padding-top:1.5pc;
+           
+        }
+        
+        #submit{
+            background-color:rgb(35, 208, 35);
+            Border-radius:2pc;
+            color:white;
+            border-color:rgb(35, 208, 35);
+            font-size: 20px;
+        }
+
+        #id{
+            margin-left:4.7pc;
+        }
+        #name{
+            margin-left:3.1pc;
+        }
+        #address{
+            margin-left:2.2pc;
+        }
+        #email{
+            margin-left:3.3pc;
+        }
+        #gender{
+            margin-left:2.3pc;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h1>REGISTER YOUR FORM</h1>
+    </div>
+    <hr>
+    <div class="formdiv2">
+        <div class="formdiv">
+        <h2>ENTER your data into database!!!</h2>
+        <form name="form1" method="post" action="insertdata.php">
+           
+            <p>ID:</p> <input type="number" id="id" placeholder="Enter your id " class="box" name="id" />
+            <br><br>
+            <p>Name:</p>    <input  placeholder="Enter your name"  class="box" id="name" type="text" name="name" value="" />
+        <br><br>
+
+        <p>Address: </p><input  class="box" id="address"placeholder="Enter your Address" type="text" name="address" value="" />
+        <br><br>
+
+        <p>Email: </p><input  class="box" id="email" type="email" placeholder="Enter your email" name="email" value=""/>
+        <br><br>
+
+        <p>Gender:</p> <input type="text" name="gender" placeholder="Enter you Gender" class="box" id="gender" value=""/>
+        <br><br>
+        <hr>
+     
+
+        <button>CREATE DATABASE</button>
+        <button>CREATE TABLE</button>
+       <a href="fetchdata.php"> <button>RETRIEVE</button></a>
+        <button>EDIT/update</button>
+       <a href="deleterow.html"><button>DELETE DATA</button></a> 
+
+       <a href="submit.html"><button id="submit">Submit</button></a>
+    </form>
+</div>
+    </div>
+    
+</body>
+</html>
